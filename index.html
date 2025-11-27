@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSSAG – Pacific Strategic Security Analysis Group</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        scroll-behavior: smooth; /* Smooth scroll for navbar links */
+    }
+
+    /* HERO SECTION */
+    .hero {
+        min-height: 75vh;
+        background: url("banner.jpg") no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+        padding: 0 15px;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .hero .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* mobile default */
+        font-weight: 700;
+    }
+
+    .hero p.lead {
+        font-size: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p.lead {
+            font-size: 1.25rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .hero h1 {
+            font-size: 3.5rem;
+        }
+        .hero p.lead {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* BIOGRAPHY SECTION */
+    .biography {
+        background: url("biography-background.jpg") no-repeat center center/cover;
+        color: white;
+        position: relative;
+    }
+
+    .biography::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    .biography .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .biography-img {
+        width: 150px;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .text-justify {
+        text-align: justify;
+    }
+
+    /* MISSION SECTION */
+    .mission-text {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* SERVICES SECTION */
+    .service-box {
+        transition: transform 0.3s;
+    }
+    .service-box:hover {
+        transform: translateY(-5px);
+    }
+
+    /* FOOTER */
+    .footer {
+        background-color: #111;
+        color: white;
+        padding: 25px 10px;
+    }
+
+    .footer a {
+        color: #ccc;
+        text-decoration: underline;
+    }
+
+    .footer a:hover {
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+            <img src="logo.jpg" alt="PSSAG Logo" height="48" class="me-2 rounded">
+            PSSAG
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#biography">Biography</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+    <div class="container">
+        <h1>PACIFIC STRATEGIC SECURITY ANALYSIS GROUP</h1>
+        <p class="lead">Intelligence • Research • Security Analysis • Strategic Advisory</p>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">About Pacific Strategic Security Analysis Group (PSSAG)</h2>
+        <p class="fs-5">
+            The Pacific Strategic Security Analysis Group (PSSAG) is a non-government, independent
+            research and security analysis organization based in Port Moresby, Papua New Guinea.
+        </p>
+        <p class="fs-5">
+            PSSAG focuses on intelligence research, security risk assessment, defense analysis,
+            geopolitical monitoring, and strategic advisory services across the Pacific region.
+        </p>
+    </div>
+</section>
+
+<!-- BIOGRAPHY SECTION -->
+<section id="biography" class="biography py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Biography – Mr. Frederick M. Punangi</h2>
+        <img src="ceo.jpg" alt="Mr. Frederick M. Punangi" class="biography-img mb-4 img-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-start">
+                <p class="fs-5 text-justify">
+                    Mr. Frederick M PUNANGI is the Founder and Chief Executive Officer of Pacific Strategic Security Analysis Group (PSSAG). He is the former Secretary for the Papua New Guinea Department of Defense, and a career intelligence analyst.
+                </p>
+                <p class="fs-5 text-justify">
+                    He was born and raised in his Irelya village, Wabag, Enga Province, Papua New Guinea (PNG). He completed his early primary schooling at Irelya Primary School (1973–1978), Wabag High School (1979–1982), and attended Sogeri National High School in the Central Province (1983–1984) to complete his secondary education. He entered the University of PNG in 1985 and graduated with a Bachelor of Arts in 1988.
+                </p>
+                <p class="fs-5 text-justify">
+                    He joined the PNG Department of Defense in February 1989 as a graduate intelligence analyst with the Defense Intelligence Bureau (DIB), undertaking a variety of intelligence analysis and assessment responsibilities, including frequent and lengthy deployments during the Bougainville Crisis from 1989 to 1998.
+                </p>
+                <p class="fs-5 text-justify">
+                    As head of the Economic Intelligence Section in DIB, he visited resource development projects throughout the country and was instrumental in developing the concept of ‘force support for resources protection operations by the national government,’ particularly in the Highlands. He also oversaw security force deployments for PNG’s National General Elections in 1992, 1997, and 2002.
+                </p>
+                <p class="fs-5 text-justify">
+                    He held senior appointments in the Department of Defense, including Director of the Strategic Intelligence Branch, Assistant Secretary for Policy Development, First Assistant Secretary for Human Resources, and First Assistant Secretary for Defense Corporate Services. He was appointed Secretary for Defense in January 2002, reappointed in 2006, and served until 2010.
+                </p>
+                <p class="fs-5 text-justify">
+                    Mr. Punangi attended many defense and intelligence courses, mainly in Australia, New Zealand, and the United States, earning certificates in strategic security analysis and defense management. He holds a Postgraduate Diploma in Strategic Studies from the Joint Services Staff College (1997) and a Master of Business Administration from the University of Western Sydney (2000).
+                </p>
+                <p class="fs-5 text-justify">
+                    During his distinguished career, he participated in multiple bilateral and international engagements, including defense cooperation talks with PNG’s defense partners, including Australia, New Zealand, the US, Indonesia, China, Japan, France, South Korea, Singapore, Israel, Malaysia, Tonga, Fiji, and the Philippines.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MISSION SECTION -->
+<section id="mission" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">Our Mission</h2>
+        <p class="fs-5 text-center mission-text">
+            The mission of PSSAG is to provide independent, intelligence-driven research, security risk assessments, 
+            and strategic advisory services that empower government, corporate, and regional partners.
+        </p>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">Our Services</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-4 bg-light rounded shadow-sm h-100 service-box">
+                    <h4>Intelligence Research</h4>
+                    <p>Open-source intelligence, political risk monitoring, and regional threat assessments.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 bg-light rounded shadow-sm h-100 service-box">
+                    <h4>Security Analysis</h4>
+                    <p>Risk analysis, security audits, defense insights, and crisis scenario evaluation.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 bg-light rounded shadow-sm h-100 service-box">
+                    <h4>Strategic Advisory</h4>
+                    <p>Consulting for government, corporate entities, and regional organizations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MEDIA / OPEN DIALOGUE SECTION -->
+<section id="media" class="py-5 bg-light">
+<div class="container">
+<h2 class="text-center fw-bold mb-4">Media & Open Dialogue</h2>
+<p class="fs-5 text-center" style="max-width:900px;margin:auto;">
+We engage across print (newspapers), broadcast (television), and digital platforms (our website and social media),
+providing intellectual insight into issues in Papua New Guinea and the Asia–Pacific region. Our work focuses on
+Strategic Defense and Security while remaining open to wider national and regional issues.
+</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="footer text-center">
+    <div class="container">
+        <strong>PACIFIC STRATEGIC SECURITY ANALYSIS GROUP (PSSAG)</strong><br>
+        <p class="mt-2 mb-1">
+            📞 Phone: 7687 7319 / 7381 5958<br>
+            ✉️ Email: <a href="mailto:fmpunangi@gmail.com">fmpunangi@gmail.com</a><br>
+            📍 Location: Port Moresby NCDC, Papua New Guinea
+        </p>
+        <small>Kombu Kuu Design • © 2025 All Rights Reserved</small>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+</body>
+</html>
